@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GreenLeaf - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* RESET & GLOBAL STYLES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f6f8f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    header,
+    footer {
+      background-color: #006d6f; /* Teal shade */
+      color: #fff;
+      padding: 1rem;
+    }
+
+    /* HEADER NAVBAR */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links a {
+      margin-left: 1rem;
+      color: #fff;
+      transition: opacity 0.3s;
+    }
+    .nav-links a:hover {
+      opacity: 0.8;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .welcome-title {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .start-button {
+      display: inline-block;
+      background-color: #008c8e;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .start-button:hover {
+      background-color: #00a2a5;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      main {
+        padding: 1rem;
+      }
+      .start-button {
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="brand">GreenLeaf</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="page1.html">Instructions</a>
+        <a href="page4.html">Feedback</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <h1 class="welcome-title">Welcome to GreenLeaf</h1>
+    <p class="description">
+      Discover the finest nature-inspired products and services for your home, garden,
+      and beyond. GreenLeaf offers eco-friendly solutions to improve and enrich your
+      daily life. We believe in harmony with nature and strive to provide only the
+      best experience for our visitors.
+    </p>
+    <p>
+      To begin, please follow our guided instructions. Just click the button below
+      to start your journey through our informational pages.
+    </p>
+    <a class="start-button" href="page1.html">Start Here</a>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 GreenLeaf. All Rights Reserved.
+  </footer>
+</body>
+</html>
